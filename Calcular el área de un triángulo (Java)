@@ -1,0 +1,40 @@
+package Ejer002;
+
+import java.util.Scanner;
+
+public class Principal {
+    //Realización de fórmulas u operaciones
+    //Calcular el Área de un triángulo
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Vamos a calcular el area de un triangulo");
+        //Hasta aquí preparar el Scanner para empezar a trabajar, esto hacerlo siempre.
+
+        //1. ENTRADA DE DATOS
+        //LAS VARIABLES (Nuestra herramienta para poder recoger nuestra informacion)
+        //Declaracion de variables
+        double base;
+        //Uso de la variable
+        System.out.println("Introduce la base del triangulo");
+        //Inicializacion
+        base = teclado.nextDouble();
+        System.out.println("El valor recogido es.."+base);
+
+        System.out.println("Introduce la altura del triangulo");
+        double altura = teclado.nextDouble();
+        System.out.println("El valor recogido es.."+altura);
+
+
+        //2. ALGORITMO
+        //área = base * altura dividido por 2
+        double area;
+        area = (base * altura) / 2;
+
+        //3. SALIDA DE DATOS
+
+        System.out.println("El area es..."+area);
+        System.out.println("Para el lado "+base+" y la altura "+altura+". El area es: "+area);
+
+    }
+}
