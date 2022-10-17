@@ -1,0 +1,37 @@
+package Ejer002;
+
+import java.util.Scanner;
+
+public class Principal2 {
+    //Calcular los euros que valen los bitcoins introducidos por teclado
+    //la equivalencia entre bitcoins y euros hay que introducirla previamente
+    //1 bitcoin cuantos euros son...
+
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        //1. ENTRADA DE DATOS
+        System.out.println("Introduce la equivalencia de 1 Bitcoin en euros ");
+        double equivalencia = teclado.nextDouble();
+
+        System.out.println("Introduce los boitcoins que tienes ");
+        double bitcoins = teclado.nextDouble();
+
+
+
+
+
+
+        //2. ALGORITMO
+        //Conversion = equivalencia * bitcoins
+        double conversion = equivalencia * bitcoins;
+
+
+        //3. SALIDA DE DATOS
+        System.out.println("El resultado es... "+conversion);
+
+
+
+    }
+}
