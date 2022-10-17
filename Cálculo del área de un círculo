@@ -1,0 +1,29 @@
+package Ejer002;
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+public class Principal1 {
+    //Area del circulo
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+       //1. ENTRADA DE DATOS
+        System.out.println("Calculo del area de un circulo");
+        System.out.println("Introduce el radio");
+        double radio = teclado.nextDouble();
+
+
+        //2. ALGORITMO
+        //area = PI por radio al cuadrado
+        //Math es una clase API de java
+        double area = Math.PI * radio * radio;
+        area = Math.PI * Math.pow(radio, 2);
+
+
+        //3. SALIDA DE DATOS
+        System.out.println("El area es.."+area);
+
+
+    }
+}
